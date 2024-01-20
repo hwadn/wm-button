@@ -3,10 +3,10 @@ import { IFormValues } from '../Setting'
 import { Button } from 'antd'
 
 interface IComponentProps {
-	formValues?: IFormValues
+	formValues: IFormValues
 }
 
 export const Component: React.FC<IComponentProps> = ({ formValues }) => {
-	const { text } = formValues || {}
-	return <Button type='primary'>{text}</Button>
+	const { text, type } = formValues || {}
+	return <Button  type={type}>{text}</Button>
 }
