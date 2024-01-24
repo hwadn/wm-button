@@ -27,7 +27,7 @@ function App() {
 					</div>
 				</Content>
 				<StyledSider>
-					<Setting onValuesChange={handleFormValueChange} />
+					<Setting onValuesChange={handleFormValueChange} initialValues={defaultFormValues} />
 				</StyledSider>
 			</Layout>
     </Layout>
