@@ -13,7 +13,7 @@
   },
   "wm": {
     "position": "static",
-    "display": "block"
+    "display": "inline-block"
   },
   "files": [
     "dist"
