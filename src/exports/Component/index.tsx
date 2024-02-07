@@ -7,6 +7,11 @@ interface IComponentProps {
 }
 
 export const Component: React.FC<IComponentProps> = ({ formValues }) => {
-	const { text, type } = formValues || {}
-	return <Button  type={type}>{text}</Button>
+	const { container, data } = formValues || {}
+  const { type, text } = data || {}
+	return (
+    <div style={{ display: 'flex', justifyContent: 'center', ...container }}>
+      <Button type={type}>{text}</Button>
+    </div>
+  )
 }
