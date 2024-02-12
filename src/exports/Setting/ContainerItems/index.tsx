@@ -10,7 +10,7 @@ const ContainerItems: React.FC = () => {
     <Form.Item label='padding' name={['container', 'padding']} >
       <Input/>
     </Form.Item>
-    <Form.Item label='color' normalize={(color) => color.metaColor.a === 0 ? undefined :  color.toHexString()} name={['container', 'backgroundColor']} >
+    <Form.Item label='backgroundColor' normalize={(color) => color.metaColor.a === 0 ? undefined :  color.toHexString()} name={['container', 'backgroundColor']} >
       <ColorPicker format='rgb' allowClear />
     </Form.Item></>
   )
